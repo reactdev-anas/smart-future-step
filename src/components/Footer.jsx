@@ -127,8 +127,7 @@ const Footer = () => {
               <p className="text-sm text-gray-400 mb-6">
                 Stay updated with our latest innovations and offers.
               </p>
-
-              <div className="flex items-center bg-white/10 rounded-full p-1">
+              <div className="flex flex-col sm:flex-row items-stretch  sm:items-center bg-white/10 rounded-2xl sm:rounded-full p-2 lg:p-1 sm:gap-2 lg:gap-0">
                 <input
                   type="email"
                   placeholder="Enter your email"
@@ -138,6 +137,7 @@ const Footer = () => {
                   Join
                 </button>
               </div>
+              
             </div>
           </div>
 
