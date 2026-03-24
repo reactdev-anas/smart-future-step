@@ -6,7 +6,7 @@ import AboutUs from "./components/aboutUs/AboutUs";
 import Portfolio from "./components/portfolio/Portfolio";
 import Career from "./components/career/Career";
 import Contact from "./components/contact/Contact";
-import CourseDetails from "./components/courseDetails";
+import CourseDetails from "./components/CourseDetails";
 import Footer from "./components/Footer";
 import Training from "./components/Training";
 import WebDevelopment from "./components/services/WebDevelopment";
