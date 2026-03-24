@@ -16,7 +16,7 @@ const Training = () => {
   const getCourses = async () => {
     try {
       setTimeout(async () => {
-        const response = await axios.get("http://localhost:5001/api/courses");
+        const response = await axios.get("https://admindashboard-kom7.onrender.com/api/courses");
         setCourses(response.data.allCourses);
         setLoading(false);
       }, 1500);

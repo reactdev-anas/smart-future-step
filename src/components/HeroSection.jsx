@@ -5,7 +5,7 @@ import digital from "./images/digital.jpg";
 import animation from "./images/animation.jpg";
 import training from "./images/training.jpg";
 import { useNavigate } from "react-router";
-import { TextRoll } from "./textroll/TextRoll";
+
 
 const HeroSection = () => {
   const [currIndex, setCurrIndex] = useState(0);

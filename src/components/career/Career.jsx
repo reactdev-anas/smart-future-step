@@ -10,7 +10,7 @@ const Career = () => {
   const getJobData = async () => {
     try {
       setTimeout( async()=>{
-       const response = await axios.get("http://localhost:5001/api/jobs");
+       const response = await axios.get("https://admindashboard-kom7.onrender.com/api/jobs");
       setJobs(response.data.alljobs);
       setLoading(false)
       },1500)

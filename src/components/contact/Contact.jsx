@@ -22,7 +22,7 @@ const ContactUs = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:5001/api/contact", form);
+      const res = await axios.post("https://admindashboard-kom7.onrender.com/api/contact", form);
       alert(res.data.message);
       setForm({ name: "", email: "", phone: "", website: "", message: "" });
     } catch (err) {

@@ -10,7 +10,7 @@ const CourseDetails = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`http://localhost:5001/api/courses/${id}`);
+      const response = await axios.get(`https://admindashboard-kom7.onrender.com/api/courses/${id}`);
       setCourse(response.data.singleCourse);
     } catch (error) {
       console.log("Error while fetching the data:", error);
