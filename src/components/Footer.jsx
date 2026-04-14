@@ -27,13 +27,22 @@ const Footer = () => {
   ];
 
   const handleNavigate = (id) => {
+    let path = "/";
+
     if (id === 1) {
-      navigate("/web-development");
+      path = "/web-development";
     } else if (id === 2) {
-      navigate("/digital-marketing");
+      path = "/digital-marketing";
+    } else if (id === 3) {
+      path = "/app-development";
     } else {
-      navigate("app-development");
+      path = "/training";
     }
+
+    navigate(path);
+
+    // ✅ scroll to top after navigation
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
     <footer className="relative bg-linear-to-br from-[#0f172a] via-[#0b1120] to-black text-gray-300 pt-16 pb-16 overflow-hidden">
@@ -152,3 +161,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
