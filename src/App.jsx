@@ -12,13 +12,15 @@ import Training from "./components/Training";
 import WebDevelopment from "./components/services/WebDevelopment";
 import AppDevelopment from "./components/services/AppDevelopment";
 import DigitalMarketing from "./components/services/DigitalMarketing";
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <NavBar />
-        <Routes>
+        <ScrollTop/>
+        <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/portfolio" element={<Portfolio />} />
